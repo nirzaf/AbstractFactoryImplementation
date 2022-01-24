@@ -1,4 +1,4 @@
-﻿public class Circle
+﻿public class Circle : IShapeFactory
 {
     private readonly double _radius;
     private const double Pie = 3.14;

@@ -1,4 +1,6 @@
-﻿public class Rectangle
+﻿namespace StackMemory;
+
+public class Rectangle : IShapeFactory
 {
     private readonly double _length;
     private readonly double _width;

@@ -1,30 +1,46 @@
 ﻿using StackMemory;
 
-CircleFactory spf = new();
+CircleFactory circleFactory = new();
 
-Console.WriteLine($" Area of the circle : { spf.DrawShape(5).GetArea()}");
-Console.WriteLine($" Circumference of the circle : { spf.DrawShape(5).GetCircumference()}");
+Console.WriteLine($" Area of the circle : { circleFactory.DrawShape(5).GetArea()}");
+Console.WriteLine($" Circumference of the circle : { circleFactory.DrawShape(5).GetCircumference()}");
 
 
 
 namespace StackMemory
 {
-    public abstract class ShapeFactory
+
+    public abstract class ShapeFactory 
     {
         public abstract Circle DrawShape(double radius);
     }
 
 
-    public class CircleFactory : ShapeFactory
+    public class CircleFactory : ShapeFactory, IShapeFactory
     {
-        //public Circle GetCircleObject(double radius)
-        //{
-        //    return new Circle(radius);
-        //}
+        private double _radius;
 
         public override Circle DrawShape(double radius)
         {
+            _radius = radius;
             return new Circle(radius);
         }
+
+        public double GetArea()
+        {
+           return DrawShape(_radius).GetArea();
+        }
+
+        public double GetCircumference()
+        {
+            return DrawShape(_radius).GetCircumference();
+        }
     }
+}
+
+public interface IShapeFactory
+{
+    double GetArea();
+
+    double GetCircumference();
 }
