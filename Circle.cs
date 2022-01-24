@@ -1,4 +1,6 @@
-﻿public class Circle : IShapeFactory
+﻿using StackMemory;
+
+public class Circle : IShapeFactory
 {
     private readonly double _radius;
     private const double Pie = 3.14;
