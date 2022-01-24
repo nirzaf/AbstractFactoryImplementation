@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32112.339
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StackMemory", "StackMemory.csproj", "{7C3E33AD-AF99-4ECD-907D-496F3D5B39DF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7C3E33AD-AF99-4ECD-907D-496F3D5B39DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C3E33AD-AF99-4ECD-907D-496F3D5B39DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C3E33AD-AF99-4ECD-907D-496F3D5B39DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C3E33AD-AF99-4ECD-907D-496F3D5B39DF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9C20A824-5355-43C5-A518-D423C0BA518A}
+	EndGlobalSection
+EndGlobal
